@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Signin | Login</title>
+    <link rel="stylesheet" href="/style.e308ff8e.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+</head>
+
+<body>
+    <!-- component -->
+    <header class="bg-gray-100">
+        <nav id="header" class="w-full z-30 top-10 bg-gray-100">
+            <div class="w-full flex items-center justify-between mt-0 px-6 py-2">
+                <label for="menu-toggle" class="cursor-pointer md:hidden block">
+                    <svg class="fill-current text-blue-600" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                        <title>menu</title>
+                        <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                    </svg>
+                </label>
+                <input class="hidden" type="checkbox" id="menu-toggle">
+
+                <div class="hidden md:flex md:items-center md:w-auto w-full order-3 md:order-1" id="menu">
+                    <nav>
+                        <ul class="md:flex items-center justify-between text-base text-blue-600 pt-4 md:pt-0">
+                            <li><a class="inline-block no-underline hover:text-black font-medium text-lg py-2 px-4 lg:-ml-2" href="/index.html">Home</a></li>
+                            <li><a class="inline-block no-underline hover:text-black font-medium text-lg py-2 px-4 lg:-ml-2" href="#">Products</a></li>
+                            <li><a class="inline-block no-underline hover:text-black font-medium text-lg py-2 px-4 lg:-ml-2" href="#">About</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="order-2 md:order-3 flex flex-wrap items-center justify-end mr-0 md:mr-4" id="nav-content">
+                    <div class="auth flex items-center w-full md:w-full">
+                        <a href="/login.html" class="bg-blue-600 text-gray-200  p-2 rounded  hover:bg-blue-500 hover:text-gray-100">Sign
+                            up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="center-layout">
+        <!-- component -->
+        <form class="bg-white shadow-xl mb-4 flex flex-wrap justify-center sm:w-3/4 lg:w-1/3">
+            <div class="w-full 1/3 bg-blue-600 p-6 text-white">
+                <p class="mb-8 text-3xl flex items-center">
+                    <svg width="32" height="32" viewBox="0 0 512 512" class="inline-block fill-current h-8 w-8 mr-2">
+                        <path d="m64 496l0-256 48 0 0-80c0-71 57-128 128-128l16 0c71 0 128 57 128 128l0 80 48 0 0 256z m172-131l-12 83 48 0-12-83c12-5 20-17 20-30 0-18-14-32-32-32-18 0-32 14-32 32 0 13 8 25 20 30z m100-197c0-49-39-88-88-88-49 0-88 39-88 88l0 72 176 0z"></path>
+                    </svg>
+                    Login Now
+                </p>
+                <div class="mb-4">
+                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" placeholder="Email">
+                </div>
+                <div class="mb-6">
+                    <input class="appearance-none border w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" type="password" placeholder="Password">
+                </div>
+                <button class="w-full bg-yellow-500 hover:bg-yellow-500 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline" type="submit">Login</button>
+				
+				<hr class="block w-full mb-4 border-0 border-t border-gray-300 mt-6">
+				<p class="mb-4 text-center">OR</p>
+
+				<div class="flex flex-wrap justify-center flex-col">
+					<div class="w-full my-3">
+                        <button class="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-2 px-4 focus:outline-none focus:shadow-outline" type="button">SignIn with Google</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <script src="/scripts.bcf3243b.js"></script>
+</body>
+
+</html>
